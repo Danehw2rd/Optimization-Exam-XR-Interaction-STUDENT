@@ -8,9 +8,11 @@ public class TrampolineMovement : MonoBehaviour {
     public float moveSpeed = 3.5f;
     public float moveTime = 3f;
     private float time;
+    [SerializeField]
+    Rigidbody rg;
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         time += Time.deltaTime;
         //Debug.Log(time);
         if(time > moveTime)
@@ -18,7 +20,7 @@ public class TrampolineMovement : MonoBehaviour {
             time = 0;
             direction = direction * -1;
         }
-        transform.position += direction * Time.deltaTime * moveSpeed;
+        rg.MovePosition(transform.position += direction * Time.deltaTime * moveSpeed);
         //Debug.Log(transform.position);
 	}
 }

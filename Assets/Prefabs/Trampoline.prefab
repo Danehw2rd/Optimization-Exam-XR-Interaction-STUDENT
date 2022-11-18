@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4793388887012376}
   - component: {fileID: 65087874397405838}
-  - component: {fileID: 1104423722016119578}
+  - component: {fileID: 1187872607131891833}
   m_Layer: 0
   m_Name: Trampoline
   m_TagString: Untagged
@@ -48,7 +48,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.015, y: 0.014999998, z: 0.001}
   m_Center: {x: 0.0000000144355, y: -0.0000000055879346, z: 0.0029}
---- !u!114 &1104423722016119578
+--- !u!114 &1187872607131891833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
