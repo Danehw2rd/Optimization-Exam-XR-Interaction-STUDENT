@@ -25,6 +25,7 @@ public class BallSpawner : MonoBehaviour
             tmpObject.SetActive(false); // set it to false (will activate as needed)
             pooledObjects.Add(tmpObject); // add the new Game Object to the pooledObjects list
         }
+
         // call the SpawnBall function every second
         InvokeRepeating("SpawnBall", 0f, 1f);
     }
